@@ -1,0 +1,122 @@
+{
+  "hotel_name": "Palm Court",
+  "tagline": "Restaurant & Grill",
+  "categories": [
+    {
+      "id": "short-eats",
+      "name": "Short Eats",
+      "icon": "🥟",
+      "items": [
+        { "name": "Fish Cutlets (2 pcs)", "price": 250, "tag": "spicy" },
+        { "name": "Vegetable Rolls (2 pcs)", "price": 200, "tag": "veg" },
+        { "name": "Chicken Patties (2 pcs)", "price": 280 },
+        { "name": "Fish Bun", "price": 150 },
+        { "name": "Mixed Cutlets Platter", "price": 450, "tag": "spicy" }
+      ]
+    },
+    {
+      "id": "soups",
+      "name": "Soups",
+      "icon": "🥣",
+      "items": [
+        { "name": "Chicken Sweet Corn Soup", "price": 380 },
+        { "name": "Mixed Seafood Soup", "price": 550 },
+        { "name": "Cream of Mushroom Soup", "price": 400, "tag": "veg" },
+        { "name": "Hot & Sour Soup", "price": 420, "tag": "spicy" }
+      ]
+    },
+    {
+      "id": "rice-curry",
+      "name": "Rice & Curry",
+      "icon": "🍛",
+      "items": [
+        { "name": "Chicken Rice & Curry", "price": 950 },
+        { "name": "Fish Rice & Curry", "price": 1050 },
+        { "name": "Mixed Meat Rice & Curry", "price": 1250 },
+        { "name": "Vegetarian Rice & Curry", "price": 750, "tag": "veg" },
+        { "name": "Cuttlefish Rice & Curry", "price": 1100, "tag": "spicy" }
+      ]
+    },
+    {
+      "id": "kottu",
+      "name": "Kottu",
+      "icon": "🍳",
+      "items": [
+        { "name": "Chicken Kottu", "price": 850 },
+        { "name": "Cheese Kottu", "price": 950 },
+        { "name": "Seafood Kottu", "price": 1150, "tag": "spicy" },
+        { "name": "Vegetable Kottu", "price": 650, "tag": "veg" },
+        { "name": "Egg Kottu", "price": 700 }
+      ]
+    },
+    {
+      "id": "fried-rice",
+      "name": "Fried Rice",
+      "icon": "🍚",
+      "items": [
+        { "name": "Chicken Fried Rice", "price": 800 },
+        { "name": "Seafood Fried Rice", "price": 1050 },
+        { "name": "Egg Fried Rice", "price": 650, "tag": "veg" },
+        { "name": "Nasi Goreng", "price": 950, "tag": "spicy" },
+        { "name": "Vegetable Fried Rice", "price": 600, "tag": "veg" }
+      ]
+    },
+    {
+      "id": "noodles",
+      "name": "Noodles",
+      "icon": "🍜",
+      "items": [
+        { "name": "Chicken Noodles", "price": 800 },
+        { "name": "Seafood Noodles", "price": 1050 },
+        { "name": "Singapore Noodles", "price": 900, "tag": "spicy" },
+        { "name": "Vegetable Noodles", "price": 600, "tag": "veg" }
+      ]
+    },
+    {
+      "id": "seafood",
+      "name": "Seafood",
+      "icon": "🦐",
+      "items": [
+        { "name": "Devilled Prawns", "price": 1450, "tag": "spicy" },
+        { "name": "Grilled Fish Fillet", "price": 1350 },
+        { "name": "Chilli Cuttlefish", "price": 1250, "tag": "spicy" },
+        { "name": "Butter Garlic Prawns", "price": 1500 },
+        { "name": "Crab Curry (Whole)", "price": 2200, "tag": "spicy" }
+      ]
+    },
+    {
+      "id": "grills",
+      "name": "Grills & BBQ",
+      "icon": "🍖",
+      "items": [
+        { "name": "Chicken Grill (Full)", "price": 1600 },
+        { "name": "Mixed Grill Platter", "price": 2400 },
+        { "name": "BBQ Pork Ribs", "price": 1950 },
+        { "name": "Grilled Sausages", "price": 850 }
+      ]
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "icon": "🍮",
+      "items": [
+        { "name": "Watalappan", "price": 350, "tag": "veg" },
+        { "name": "Ice Cream (2 scoops)", "price": 300, "tag": "veg" },
+        { "name": "Fruit Salad with Cream", "price": 400, "tag": "veg" },
+        { "name": "Chocolate Brownie", "price": 450, "tag": "veg" }
+      ]
+    },
+    {
+      "id": "beverages",
+      "name": "Beverages",
+      "icon": "🥤",
+      "items": [
+        { "name": "Fresh Lime Juice", "price": 250, "tag": "veg" },
+        { "name": "King Coconut", "price": 200, "tag": "veg" },
+        { "name": "Milk Tea", "price": 150, "tag": "veg" },
+        { "name": "Fresh Fruit Juice", "price": 350, "tag": "veg" },
+        { "name": "Soft Drinks", "price": 180, "tag": "veg" }
+      ]
+    }
+  ]
+}

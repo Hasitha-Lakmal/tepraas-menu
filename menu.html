@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEPRAAS SIGIRIYA | Menu</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        /* Header */
+        header img { width: 100px; margin-bottom: 10px; }
+        h1 { font-size: 28px; margin: 0; color: #2C2620; letter-spacing: 2px; }
+        
+        /* ලස්සන රේඛාව */
+        .divider { width: 60%; height: 1px; background: #2C2620; margin: 20px auto; opacity: 0.5; }
+
+        /* Categories */
+        .category-box { margin-bottom: 25px; }
+        .category-header { 
+            font-size: 20px; font-weight: bold; cursor: pointer;
+            padding: 10px; color: #46583E;
+        }
+        
+        /* Items - මැදට */
+        .item-list { display: none; margin-top: 5px; }
+        .category-box.active .item-list { display: block; }
+        .item-row { 
+            display: flex; justify-content: center; gap: 20px; 
+            padding: 8px 0; font-size: 16px;
+        }
+        .price { font-weight: bold; color: #BD8A3F; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="logo.png" alt="Logo">
+        <h1>TEPRAAS SIGIRIYA</h1>
+        <div class="divider"></div>
+    </header>
+
+    <div id="menu-content"></div>
+</div>
+
+<script>
+    fetch('data.json').then(res => res.json()).then(data => {
+        const container = document.getElementById('menu-content');
+        data.categories.forEach(cat => {
+            container.innerHTML += `
+                <div class="category-box">
+                    <div class="category-header" onclick="this.parentElement.classList.toggle('active')">
+                        ${cat.name}
+                    </div>
+                    <div class="item-list">
+                        ${cat.items.map(i => `
+                            <div class="item-row">
+                                <span>${i.name}</span>
+                                <span class="price">Rs. ${i.price}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+                </div>`;
+        });
+    });
+</script>
+
+</body>
+</html>
